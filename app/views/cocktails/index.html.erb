@@ -1,6 +1,11 @@
-<br>
+<div class="navbar" >
+<a class= "nav-text" <%= link_to "Add a new cocktail", new_cocktail_path %>>
+</div>
+
+<div class="index-banner">
 <h1> Your Cocktail List</h1>
-<%= link_to "Add a new cocktail", new_cocktail_path %>
+</div>
+
 <% @cocktails.each do |cocktail| %>
   <h2><%= link_to cocktail.name, cocktail_path(cocktail) %></h2>
 <% end %>

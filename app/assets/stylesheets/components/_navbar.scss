@@ -1,12 +1,13 @@
-.navbar-lewagon {
-  justify-content: space-between;
-  background: white;
+.navbar {
+  justify-content: flex-end;
+  background: linear-gradient(to right, #f05053, #e1eec3);
 }
 
-.navbar-lewagon .navbar-collapse {
-  flex-grow: 0;
+.nav-text {
+font-family: 'Source Sans Pro', sans-serif;
+color: white;
+font-size: bold;
 }
 
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
-}
+
+
