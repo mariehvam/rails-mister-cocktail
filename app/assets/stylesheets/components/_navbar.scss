@@ -3,10 +3,14 @@
   background: linear-gradient(to right, #f05053, #e1eec3);
 }
 
-.nav-text {
+.btn-nav {
 font-family: 'Source Sans Pro', sans-serif;
 color: white;
-font-size: bold;
+font-size: 18px;
+padding: $spacer ($spacer * 2);
+  &:hover {
+    color: black;
+}
 }
 
 

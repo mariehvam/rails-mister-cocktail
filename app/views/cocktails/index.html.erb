@@ -1,11 +1,20 @@
 <div class="navbar" >
-<a class= "nav-text" <%= link_to "Add a new cocktail", new_cocktail_path %>>
+  <a class= "btn btn-nav" <%= link_to "Add a new cocktail", new_cocktail_path %>>
 </div>
 
 <div class="index-banner">
-<h1> Your Cocktail List</h1>
+  <h1> Your Cocktail List</h1>
 </div>
 
+  <div class="card">
+  <img src="https://images.unsplash.com/photo-1557754011-7a79c0f66ef0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80" class="card-img-top" alt="woman drinking wine">
+  <div class="card-body">
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+</div>
+
+
 <% @cocktails.each do |cocktail| %>
-  <h2><%= link_to cocktail.name, cocktail_path(cocktail) %></h2>
+    <h2><%= link_to cocktail.name, cocktail_path(cocktail) %></h2>
 <% end %>
+
