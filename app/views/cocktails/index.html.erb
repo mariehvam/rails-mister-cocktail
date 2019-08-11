@@ -6,15 +6,30 @@
   <h1> Your Cocktail List</h1>
 </div>
 
-  <div class="card">
-  <img src="https://images.unsplash.com/photo-1557754011-7a79c0f66ef0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80" class="card-img-top" alt="woman drinking wine">
-  <div class="card-body">
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  <div class="cards">
+    <div class= "card1">
+      <div class="card1-body">
+        <p class="card1-text">Mojito</p>
+      </div>
+    </div>
+    <div class= "card2">
+      <div class="card2-body">
+        <p class="card2-text">Gin & Tonic</p>
+      </div>
+    </div>
+    <div class= "card3">
+      <div class="card3-body">
+        <p class="card3-text">Third Drink</p>
+      </div>
+    </div>
   </div>
-</div>
-
 
 <% @cocktails.each do |cocktail| %>
     <h2><%= link_to cocktail.name, cocktail_path(cocktail) %></h2>
 <% end %>
+
+
+
+
+
 
